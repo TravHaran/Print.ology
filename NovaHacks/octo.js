@@ -43,6 +43,8 @@ class OctoClient {
 }
 
 module.exports = OctoClient
+
+/*
 const apiKey = '804C6CAD83544A1994BC9E1D4EAF4987'
 const ip= 'http://192.168.8.218/'
 const file = './3DMODELS/ironman.stl'
@@ -51,3 +53,4 @@ const client = new OctoClient(ip, apiKey)
 client.connect().then(_ => console.log('done'))
   .then(x => client.upload(fileLoc, file)).then(_ => console.log('done')).catch(console.error)
 //  .then(x => client.print(file))*/
+

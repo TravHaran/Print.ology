@@ -27,5 +27,8 @@ app.post('/print/:target', function (req, res) {
     .then(_ => octo.upload(target, filePath))
     .then(_ => octo.print(target))
 })
+app.post('/test', function (req, res) {
+  res.send('hello')
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
