@@ -27,7 +27,7 @@ app.post('/print/:target', function (req, res) {
     .then(_ => octo.upload(target, filePath))
     .then(_ => octo.print(target))
 })
-app.post('/test', function (req, res) {
+app.get('/test', function (req, res) {
   res.send('hello')
 })
 
